@@ -14,6 +14,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ilona Hair Studio — Hair Salon in Calgary, AB</title>
   <meta name="description" content="Ilona Hair Studio in Calgary: haircuts, coloring, balayage, highlights, bridal hairstyles. Book online.">
+  <!-- OPEN GRAPH: превью ссылки в мессенджерах и соцсетях -->
+    <meta property="og:title" content="Ilona Hair Studio — Hair Salon in Calgary, AB">
+    <meta property="og:description" content="Haircuts, coloring, balayage &amp; bridal styles in Calgary — by Ilona.">
+    <meta property="og:image" content="https://ilona-hair-studio.github.io/ihs/img/model_5.jpeg">
+    <meta property="og:url" content="https://ilona-hair-studio.github.io/ihs/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -28,29 +36,43 @@
         <span></span>
       </button>
       <nav class="nav" id="main-nav">
-        <a href="#services">Services</a>
         <a href="#portfolio">Portfolio</a>
-        <a href="#about">About</a>
+        <a href="#services">Services</a>
         <a href="#reviews">Reviews</a>
+        <a href="#about">About</a>
         <a href="#shop">Shop</a>
         <a href="#contacts">Contacts</a>
         <a class="nav-book" href="https://book.squareup.com/appointments/buke603djnq2th/location/LHS0RMQ2BGRQQ/services" target="_blank" rel="noopener">Book now</a>
       </nav>
-        <a class="btn btn-header" href="https://book.squareup.com/appointments/buke603djnq2th/location/LHS0RMQ2BGRQQ/services" target="_blank" rel="noopener">Book now</a>
+      <a class="btn btn-header" href="https://book.squareup.com/appointments/buke603djnq2th/location/LHS0RMQ2BGRQQ/services" target="_blank" rel="noopener">Book now</a>
     </div>
   </header>
 
   <!-- ПЕРВЫЙ ЭКРАН -->
   <section class="hero">
     <div class="container">
+      <img class="hero-photo" src="img/ilona.jpg" alt="Ilona — hairstylist in Calgary">
       <h1>Great hair starts here</h1>
       <p class="hero-sub">Haircuts, coloring, balayage &amp; bridal styles in Calgary — by Ilona.</p>
       <a class="btn btn-big" href="https://book.squareup.com/appointments/buke603djnq2th/location/LHS0RMQ2BGRQQ/services" target="_blank" rel="noopener">Book your appointment</a>
       <p class="hero-note">Free 15-min consultation for new clients</p>
     </div>
   </section>
-
-  <!-- УСЛУГИ: цены взяты со страницы Square. Добавляй новые карточки по образцу -->
+<!-- ПОРТФОЛИО: сетка фото, клик — фото открывается крупно (лайтбокс) -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <p class="section-sub">Recent work by Ilona</p>
+      <div class="portfolio-grid">
+        <img src="img/model_1.jpeg" alt="Hair work by Ilona — photo 1">
+        <img src="img/model_2.jpeg" alt="Hair work by Ilona — photo 2">
+        <img src="img/model_3.jpeg" alt="Hair work by Ilona — photo 3">
+        <img src="img/model_4.jpeg" alt="Hair work by Ilona — photo 4">
+        <img src="img/model_5.jpeg" alt="Hair work by Ilona — photo 5">
+      </div>
+    </div>
+  </section>
+<!-- УСЛУГИ: цены взяты со страницы Square. Добавляй новые карточки по образцу -->
   <section id="services" class="section">
     <div class="container">
       <h2>Services &amp; Prices</h2>
@@ -97,40 +119,7 @@
       <!-- ЗАДАНИЕ 2 (когда будешь готов): добавь сюда секцию "About" — пару строк про Илону -->
     </div>
   </section>
-
-  <!-- ПОРТФОЛИО: сетка фото, клик — фото открывается крупно (лайтбокс) -->
-  <section id="portfolio" class="section">
-    <div class="container">
-      <h2>Portfolio</h2>
-      <p class="section-sub">Recent work by Ilona</p>
-      <div class="portfolio-grid">
-        <img src="img/model_1.jpeg" alt="Hair work by Ilona — photo 1">
-        <img src="img/model_2.jpeg" alt="Hair work by Ilona — photo 2">
-        <img src="img/model_3.jpeg" alt="Hair work by Ilona — photo 3">
-        <img src="img/model_4.jpeg" alt="Hair work by Ilona — photo 4">
-        <img src="img/model_5.jpeg" alt="Hair work by Ilona — photo 5">
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT: текст написан по инстаграм-био Илоны -->
-  <section id="about" class="section section-alt">
-    <div class="container about-wrap">
-      <img class="about-photo" src="img/ilona.jpg" alt="Ilona — hairstylist in Calgary">
-      <p class="overline">Meet your stylist</p>
-      <h2>About Ilona</h2>
-      <div class="about-divider">✂️</div>
-      <p>Hi, I'm Ilona — a Ukrainian hairstylist based in Calgary, with over 10 years of experience behind the chair.</p>
-      <p>I specialize in haircuts, color, and bridal hair. My goal is simple: hair that looks beautiful in real life, not just in photos. Whether it's a fresh cut, a full color transformation, or your wedding day look, every appointment starts with a consultation — so you leave with hair you love, and a plan to keep it that way.</p>
-      <div class="about-pills">
-        <span>✂️ 10+ years of experience</span>
-        <span>🎨 Haircuts • Color • Bridal Hair</span>
-        <span>📍 Marda Loop, Calgary, AB</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ОТЗЫВЫ: начни с реального отзыва Дарины, потом добавишь остальные -->
+<!-- ОТЗЫВЫ: начни с реального отзыва Дарины, потом добавишь остальные -->
   <section id="reviews" class="section section-alt">
     <div class="container">
       <h2>Reviews</h2>
@@ -154,202 +143,260 @@
       </div>
     </div>
   </section>
-
-  <!-- МАГАЗИН: товары ORising, заказ через WhatsApp, самовывоз из студии -->
-  <section id="shop" class="section section-alt">
-    <div class="container">
-      <h2>Shop</h2>
-      <p class="section-sub">Professional hair care from ORising, Oribe, Redken, K18, Goldwell and TIGI — available in the studio. Order on WhatsApp and pick up at your appointment, or just drop by.</p>
-      <div class="cards">
-        <div class="card product">
-          <img class="product-photo-img" src="img/product-mask.jpg" alt="H.G. System Nourishing and Strengthening Hair Mask">
-          <h4>H.G. System Nourishing &amp; Strengthening Hair Mask</h4>
-          <p class="product-desc">Plant-based mask for thinning, slow-growth hair. No parabens. Apply once a week before shampoo.</p>
-          <p class="price">CA$120 · 250 ml</p>
-          <p class="stock">In stock: 1</p>
-          <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona!%20I%27d%20like%20to%20order%3A%20H.G.%20System%20Hair%20Mask%20250%20ml%20-%20CA%24120.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
-        </div>
-        <div class="card product">
-          <img class="product-photo-img" src="img/product-biocomplex.jpg" alt="H.G. System Biocomplex">
-          <h4>H.G. System Biocomplex</h4>
-          <p class="product-desc">Leave-on phyto-essential lotion for scalp and hair strength. For thinning hair.</p>
-          <p class="price">CA$130 · 95 ml</p>
-          <p class="stock">In stock: 1</p>
-          <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona!%20I%27d%20like%20to%20order%3A%20H.G.%20System%20Biocomplex%2095%20ml%20-%20CA%24130.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
-        </div>
-        <div class="card product">
-          <img class="product-photo-img" src="img/product-energetic-d.jpg" alt="Energetic Composition D">
-          <h4>Energetic Composition D</h4>
-          <p class="product-desc">Energizing composition for scalp and hair.</p>
-          <p class="price">CA$50 · 55 ml</p>
-          <p class="stock">In stock: 1</p>
-          <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona!%20I%27d%20like%20to%20order%3A%20Energetic%20Composition%20D%2055%20ml%20-%20CA%2450.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
-        </div>
-        <div class="card product">
-          <img class="product-photo-img" src="img/product-hairwash.jpg" alt="H.G. System Bioessential Hair Wash">
-          <h4>H.G. System Bioessential Hair Wash</h4>
-          <p class="product-desc">Gentle stimulating shampoo with cinchona bark extracts. For daily care of fine or weakened hair.</p>
-          <p class="price">CA$50 · 250 ml</p>
-          <p class="stock">In stock: 2</p>
-          <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona!%20I%27d%20like%20to%20order%3A%20H.G.%20System%20Bioessential%20Hair%20Wash%20250%20ml%20-%20CA%2450.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
-        </div>
-        <div class="card product">
-          <img class="product-photo-img" src="img/product-biphasic.jpg" alt="Biphasic Fortifying System Ritual">
-          <h4>Biphasic Fortifying System Ritual</h4>
-          <p class="product-desc">Two-phase fortifying ritual for hair strength: 15 ampoules + 250 ml lotion.</p>
-          <p class="price">CA$250 · 15 ampoules + 250 ml</p>
-          <p class="stock">In stock: 2</p>
-          <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona!%20I%27d%20like%20to%20order%3A%20Biphasic%20Fortifying%20System%20Ritual%20%2815%20ampoules%20%2B%20250%20ml%29%20-%20CA%24250.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
-        </div>
-
-        <div class="card product">
-          <img class="product-photo-img" src="img/product-oribe-alchemy-shampoo.jpg" alt="Oribe Hair Alchemy Shampoo">
-          <h4>Oribe Hair Alchemy Shampoo</h4>
-          <p class="product-desc">Strengthening shampoo for fragile, breakage-prone hair.</p>
-          <p class="price">Price on request · 250 ml</p>
-          <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Oribe%20Hair%20Alchemy%20Shampoo%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
-        </div>
-
-        <div class="card product">
-          <img class="product-photo-img" src="img/product-oribe-alchemy-conditioner.jpg" alt="Oribe Hair Alchemy Conditioner">
-          <h4>Oribe Hair Alchemy Conditioner</h4>
-          <p class="product-desc">Strengthening conditioner for fragile, breakage-prone hair.</p>
-          <p class="price">Price on request · 200 ml</p>
-          <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Oribe%20Hair%20Alchemy%20Conditioner%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
-        </div>
-
-        <div class="card product">
-          <img class="product-photo-img" src="img/product-oribe-cote-azur.jpg" alt="Oribe Côte d'Azur Eau de Parfum">
-          <h4>Oribe Côte d'Azur Eau de Parfum</h4>
-          <p class="product-desc">Oribe's signature scent — bergamot, white butterfly jasmine and sandalwood.</p>
-          <p class="price">Price on request · 100 ml</p>
-          <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Oribe%20C%C3%B4te%20d%27Azur%20Eau%20de%20Parfum%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
-        </div>
-
-        <div class="card product">
-          <img class="product-photo-img" src="img/product-oribe-cleansing-creme.jpg" alt="Oribe Cleansing Crème for Moisture & Control">
-          <h4>Oribe Cleansing Crème for Moisture & Control</h4>
-          <p class="product-desc">Gentle cleansing crème that moisturises and tames frizz, without lather.</p>
-          <p class="price">Price on request · 250 ml</p>
-          <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Oribe%20Cleansing%20Cr%C3%A8me%20for%20Moisture%20%26%20Control%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
-        </div>
-
-        <div class="card product">
-          <img class="product-photo-img" src="img/product-k18-astrolift.jpg" alt="K18 AstroLift Reparative Volume Spray">
-          <h4>K18 AstroLift Reparative Volume Spray</h4>
-          <p class="product-desc">Reparative volume spray — lift and fullness without stiffness.</p>
-          <p class="price">Price on request · 118 ml</p>
-          <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20K18%20AstroLift%20Reparative%20Volume%20Spray%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
-        </div>
-
-        <div class="card product">
-          <img class="product-photo-img" src="img/product-redken-acidic-grow.jpg" alt="Redken Acidic Grow Full System">
-          <h4>Redken Acidic Grow Full System</h4>
-          <p class="product-desc">Shampoo + conditioner set for thinning hair — density and strength.</p>
-          <p class="price">Price on request · 300 ml + 300 ml</p>
-          <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Redken%20Acidic%20Grow%20Full%20System%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
-        </div>
-
-        <div class="card product">
-          <img class="product-photo-img" src="img/product-redken-acidic-curls.jpg" alt="Redken Acidic Bonding Curls">
-          <h4>Redken Acidic Bonding Curls</h4>
-          <p class="product-desc">Shampoo + conditioner set for curly hair — strength and defined curls.</p>
-          <p class="price">Price on request · 300 ml + 300 ml</p>
-          <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Redken%20Acidic%20Bonding%20Curls%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
-        </div>
-
-        <div class="card product">
-          <img class="product-photo-img" src="img/product-redken-one-united.jpg" alt="Redken One United">
-          <h4>Redken One United</h4>
-          <p class="product-desc">Multi-benefit leave-in spray — 25 benefits in one bottle.</p>
-          <p class="price">Price on request · 150 ml · 400 ml</p>
-          <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Redken%20One%20United%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
-        </div>
-
-        <div class="card product">
-          <img class="product-photo-img" src="img/product-redken-blondage-shampoo.jpg" alt="Redken Color Extend Blondage Shampoo">
-          <h4>Redken Color Extend Blondage Shampoo</h4>
-          <p class="product-desc">Purple shampoo that neutralises brassiness on blonde and highlighted hair.</p>
-          <p class="price">Price on request · 300 ml</p>
-          <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Redken%20Color%20Extend%20Blondage%20Shampoo%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
-        </div>
-
-        <div class="card product">
-          <img class="product-photo-img" src="img/product-redken-blondage-conditioner.jpg" alt="Redken Color Extend Blondage Conditioner">
-          <h4>Redken Color Extend Blondage Conditioner</h4>
-          <p class="product-desc">Purple conditioner that neutralises brassiness and detangles blonde hair.</p>
-          <p class="price">Price on request · 300 ml</p>
-          <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Redken%20Color%20Extend%20Blondage%20Conditioner%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
-        </div>
-
-        <div class="card product">
-          <img class="product-photo-img" src="img/product-redken-quick-blowout.jpg" alt="Redken Quick Blowout">
-          <h4>Redken Quick Blowout</h4>
-          <p class="product-desc">Lightweight blow-dry primer — faster drying, smooth finish.</p>
-          <p class="price">Price on request · 125 ml</p>
-          <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Redken%20Quick%20Blowout%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
-        </div>
-
-        <div class="card product">
-          <img class="product-photo-img" src="img/product-goldwell-blondes.jpg" alt="Goldwell Dualsenses Blondes & Highlights Duo">
-          <h4>Goldwell Dualsenses Blondes & Highlights Duo</h4>
-          <p class="product-desc">Anti-yellow shampoo + conditioner set for blonde and highlighted hair.</p>
-          <p class="price">Price on request · 300 ml + 300 ml</p>
-          <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Goldwell%20Dualsenses%20Blondes%20%26%20Highlights%20Duo%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
-        </div>
-
-        <div class="card product">
-          <img class="product-photo-img" src="img/product-redken-dry-shampoo.jpg" alt="Redken Deep Clean Dry Shampoo">
-          <h4>Redken Deep Clean Dry Shampoo</h4>
-          <p class="product-desc">Dry shampoo that refreshes hair and absorbs oil between washes.</p>
-          <p class="price">Price on request · 150 ml</p>
-          <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Redken%20Deep%20Clean%20Dry%20Shampoo%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
-        </div>
-
-        <div class="card product">
-          <img class="product-photo-img" src="img/product-bed-head-queen.jpg" alt="TIGI Bed Head Superstar Queen For A Day">
-          <h4>TIGI Bed Head Superstar Queen For A Day</h4>
-          <p class="product-desc">Thickening spray for instant volume and fullness.</p>
-          <p class="price">Price on request · 311 ml</p>
-          <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20TIGI%20Bed%20Head%20Superstar%20Queen%20For%20A%20Day%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
-        </div>
-
-        <div class="card product">
-          <img class="product-photo-img" src="img/product-redken-fashion-work-12.jpg" alt="Redken Fashion Work 12">
-          <h4>Redken Fashion Work 12</h4>
-          <p class="product-desc">Versatile working hairspray — brushable hold, natural finish.</p>
-          <p class="price">Price on request · 400 ml</p>
-          <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Redken%20Fashion%20Work%2012%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
-        </div>
-
-        <div class="card product">
-          <img class="product-photo-img" src="img/product-stripes-brush.jpg" alt="Stripes Mini Polish Brush">
-          <h4>Stripes Mini Polish Brush</h4>
-          <p class="product-desc">Mini detangling brush — smooths and polishes hair, travel size.</p>
-          <p class="price">Price on request</p>
-          <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Stripes%20Mini%20Polish%20Brush%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
-        </div>
+<!-- ABOUT: текст написан по инстаграм-био Илоны -->
+  <section id="about" class="section section-alt">
+    <div class="container about-wrap">
+      <img class="about-photo" src="img/ilona.jpg" alt="Ilona — hairstylist in Calgary">
+      <p class="overline">Meet your stylist</p>
+      <h2>About Ilona</h2>
+      <div class="about-divider">✂️</div>
+      <p>Hi, I'm Ilona — a Ukrainian hairstylist based in Calgary, with over 10 years of experience behind the chair.</p>
+      <p>I specialize in haircuts, color, and bridal hair. My goal is simple: hair that looks beautiful in real life, not just in photos. Whether it's a fresh cut, a full color transformation, or your wedding day look, every appointment starts with a consultation — so you leave with hair you love, and a plan to keep it that way.</p>
+      <div class="about-pills">
+        <span>✂️ 10+ years of experience</span>
+        <span>🎨 Haircuts • Color • Bridal Hair</span>
+        <span>📍 Marda Loop, Calgary, AB</span>
       </div>
     </div>
   </section>
+<!-- МАГАЗИН: товары ORising, заказ через WhatsApp, самовывоз из студии -->
+<section id="shop" class="section section-alt">
+  <div class="container">
+    <h2>Shop</h2>
+    <p class="section-sub">Professional hair care from ORising, Oribe, Redken, K18, Goldwell and TIGI — available in the studio. Order on WhatsApp and pick up at your appointment, or just drop by.</p>
+    <div class="cards">
 
-  <!-- КОНТАКТЫ -->
+      <div class="card product">
+        <img class="product-photo-img" src="img/product-mask.jpg" alt="H.G. System Nourishing and Strengthening Hair Mask">
+        <h4>H.G. System Nourishing &amp; Strengthening Hair Mask</h4>
+        <p class="product-desc">Plant-based mask for thinning, slow-growth hair. No parabens. Apply once a week before shampoo.</p>
+        <p class="price">CA$120 · 250 ml</p>
+        <p class="stock">In stock: 1</p>
+        <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona!%20I%27d%20like%20to%20order%3A%20H.G.%20System%20Hair%20Mask%20250%20ml%20-%20CA%24120.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
+      </div>
+
+      <div class="card product">
+        <img class="product-photo-img" src="img/product-biocomplex.jpg" alt="H.G. System Biocomplex">
+        <h4>H.G. System Biocomplex</h4>
+        <p class="product-desc">Leave-on phyto-essential lotion for scalp and hair strength. For thinning hair.</p>
+        <p class="price">CA$130 · 95 ml</p>
+        <p class="stock">In stock: 1</p>
+        <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona!%20I%27d%20like%20to%20order%3A%20H.G.%20System%20Biocomplex%2095%20ml%20-%20CA%24130.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
+      </div>
+
+      <div class="card product">
+        <img class="product-photo-img" src="img/product-energetic-d.jpg" alt="Energetic Composition D">
+        <h4>Energetic Composition D</h4>
+        <p class="product-desc">Energizing composition for scalp and hair.</p>
+        <p class="price">CA$50 · 55 ml</p>
+        <p class="stock">In stock: 1</p>
+        <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona!%20I%27d%20like%20to%20order%3A%20Energetic%20Composition%20D%2055%20ml%20-%20CA%2450.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
+      </div>
+
+      <div class="card product">
+        <img class="product-photo-img" src="img/product-hairwash.jpg" alt="H.G. System Bioessential Hair Wash">
+        <h4>H.G. System Bioessential Hair Wash</h4>
+        <p class="product-desc">Gentle stimulating shampoo with cinchona bark extracts. For daily care of fine or weakened hair.</p>
+        <p class="price">CA$50 · 250 ml</p>
+        <p class="stock">In stock: 2</p>
+        <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona!%20I%27d%20like%20to%20order%3A%20H.G.%20System%20Bioessential%20Hair%20Wash%20250%20ml%20-%20CA%2450.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
+      </div>
+
+      <div class="card product">
+        <img class="product-photo-img" src="img/product-biphasic.jpg" alt="Biphasic Fortifying System Ritual">
+        <h4>Biphasic Fortifying System Ritual</h4>
+        <p class="product-desc">Two-phase fortifying ritual for hair strength: 15 ampoules + 250 ml lotion.</p>
+        <p class="price">CA$250 · 15 ampoules + 250 ml</p>
+        <p class="stock">In stock: 2</p>
+        <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona!%20I%27d%20like%20to%20order%3A%20Biphasic%20Fortifying%20System%20Ritual%20%2815%20ampoules%20%2B%20250%20ml%29%20-%20CA%24250.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
+      </div>
+
+      <div class="card product">
+        <img class="product-photo-img" src="img/product-oribe-alchemy-shampoo.jpg" alt="Oribe Hair Alchemy Shampoo">
+        <h4>Oribe Hair Alchemy Shampoo</h4>
+        <p class="product-desc">Strengthening shampoo for fragile, breakage-prone hair.</p>
+        <p class="price">Price on request · 250 ml</p>
+        <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Oribe%20Hair%20Alchemy%20Shampoo%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
+      </div>
+
+      <div class="card product">
+        <img class="product-photo-img" src="img/product-oribe-alchemy-conditioner.jpg" alt="Oribe Hair Alchemy Conditioner">
+        <h4>Oribe Hair Alchemy Conditioner</h4>
+        <p class="product-desc">Strengthening conditioner for fragile, breakage-prone hair.</p>
+        <p class="price">Price on request · 200 ml</p>
+        <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Oribe%20Hair%20Alchemy%20Conditioner%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
+      </div>
+
+      <div class="card product">
+        <img class="product-photo-img" src="img/product-oribe-cote-azur.jpg" alt="Oribe Côte d'Azur Eau de Parfum">
+        <h4>Oribe Côte d'Azur Eau de Parfum</h4>
+        <p class="product-desc">Oribe's signature scent — bergamot, white butterfly jasmine and sandalwood.</p>
+        <p class="price">Price on request · 100 ml</p>
+        <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Oribe%20C%C3%B4te%20d%27Azur%20Eau%20de%20Parfum%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
+      </div>
+
+      <div class="card product">
+        <img class="product-photo-img" src="img/product-oribe-cleansing-creme.jpg" alt="Oribe Cleansing Crème for Moisture & Control">
+        <h4>Oribe Cleansing Crème for Moisture & Control</h4>
+        <p class="product-desc">Gentle cleansing crème that moisturises and tames frizz, without lather.</p>
+        <p class="price">Price on request · 250 ml</p>
+        <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Oribe%20Cleansing%20Cr%C3%A8me%20for%20Moisture%20%26%20Control%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
+      </div>
+
+      <div class="card product">
+        <img class="product-photo-img" src="img/product-k18-astrolift.jpg" alt="K18 AstroLift Reparative Volume Spray">
+        <h4>K18 AstroLift Reparative Volume Spray</h4>
+        <p class="product-desc">Reparative volume spray — lift and fullness without stiffness.</p>
+        <p class="price">Price on request · 118 ml</p>
+        <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20K18%20AstroLift%20Reparative%20Volume%20Spray%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
+      </div>
+
+      <div class="card product">
+        <img class="product-photo-img" src="img/product-redken-acidic-grow.jpg" alt="Redken Acidic Grow Full System">
+        <h4>Redken Acidic Grow Full System</h4>
+        <p class="product-desc">Shampoo + conditioner set for thinning hair — density and strength.</p>
+        <p class="price">Price on request · 300 ml + 300 ml</p>
+        <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Redken%20Acidic%20Grow%20Full%20System%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
+      </div>
+
+      <div class="card product">
+        <img class="product-photo-img" src="img/product-redken-acidic-curls.jpg" alt="Redken Acidic Bonding Curls">
+        <h4>Redken Acidic Bonding Curls</h4>
+        <p class="product-desc">Shampoo + conditioner set for curly hair — strength and defined curls.</p>
+        <p class="price">Price on request · 300 ml + 300 ml</p>
+        <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Redken%20Acidic%20Bonding%20Curls%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
+      </div>
+
+      <div class="card product">
+        <img class="product-photo-img" src="img/product-redken-one-united.jpg" alt="Redken One United">
+        <h4>Redken One United</h4>
+        <p class="product-desc">Multi-benefit leave-in spray — 25 benefits in one bottle.</p>
+        <p class="price">Price on request · 150 ml · 400 ml</p>
+        <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Redken%20One%20United%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
+      </div>
+
+      <div class="card product">
+        <img class="product-photo-img" src="img/product-redken-blondage-shampoo.jpg" alt="Redken Color Extend Blondage Shampoo">
+        <h4>Redken Color Extend Blondage Shampoo</h4>
+        <p class="product-desc">Purple shampoo that neutralises brassiness on blonde and highlighted hair.</p>
+        <p class="price">Price on request · 300 ml</p>
+        <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Redken%20Color%20Extend%20Blondage%20Shampoo%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
+      </div>
+
+      <div class="card product">
+        <img class="product-photo-img" src="img/product-redken-blondage-conditioner.jpg" alt="Redken Color Extend Blondage Conditioner">
+        <h4>Redken Color Extend Blondage Conditioner</h4>
+        <p class="product-desc">Purple conditioner that neutralises brassiness and detangles blonde hair.</p>
+        <p class="price">Price on request · 300 ml</p>
+        <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Redken%20Color%20Extend%20Blondage%20Conditioner%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
+      </div>
+
+      <div class="card product">
+        <img class="product-photo-img" src="img/product-redken-quick-blowout.jpg" alt="Redken Quick Blowout">
+        <h4>Redken Quick Blowout</h4>
+        <p class="product-desc">Lightweight blow-dry primer — faster drying, smooth finish.</p>
+        <p class="price">Price on request · 125 ml</p>
+        <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Redken%20Quick%20Blowout%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
+      </div>
+
+      <div class="card product">
+        <img class="product-photo-img" src="img/product-goldwell-blondes.jpg" alt="Goldwell Dualsenses Blondes & Highlights Duo">
+        <h4>Goldwell Dualsenses Blondes & Highlights Duo</h4>
+        <p class="product-desc">Anti-yellow shampoo + conditioner set for blonde and highlighted hair.</p>
+        <p class="price">Price on request · 300 ml + 300 ml</p>
+        <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Goldwell%20Dualsenses%20Blondes%20%26%20Highlights%20Duo%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
+      </div>
+
+      <div class="card product">
+        <img class="product-photo-img" src="img/product-redken-dry-shampoo.jpg" alt="Redken Deep Clean Dry Shampoo">
+        <h4>Redken Deep Clean Dry Shampoo</h4>
+        <p class="product-desc">Dry shampoo that refreshes hair and absorbs oil between washes.</p>
+        <p class="price">Price on request · 150 ml</p>
+        <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Redken%20Deep%20Clean%20Dry%20Shampoo%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
+      </div>
+
+      <div class="card product">
+        <img class="product-photo-img" src="img/product-bed-head-queen.jpg" alt="TIGI Bed Head Superstar Queen For A Day">
+        <h4>TIGI Bed Head Superstar Queen For A Day</h4>
+        <p class="product-desc">Thickening spray for instant volume and fullness.</p>
+        <p class="price">Price on request · 311 ml</p>
+        <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20TIGI%20Bed%20Head%20Superstar%20Queen%20For%20A%20Day%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
+      </div>
+
+      <div class="card product">
+        <img class="product-photo-img" src="img/product-redken-fashion-work-12.jpg" alt="Redken Fashion Work 12">
+        <h4>Redken Fashion Work 12</h4>
+        <p class="product-desc">Versatile working hairspray — brushable hold, natural finish.</p>
+        <p class="price">Price on request · 400 ml</p>
+        <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Redken%20Fashion%20Work%2012%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
+      </div>
+
+      <div class="card product">
+        <img class="product-photo-img" src="img/product-stripes-brush.jpg" alt="Stripes Mini Polish Brush">
+        <h4>Stripes Mini Polish Brush</h4>
+        <p class="product-desc">Mini detangling brush — smooths and polishes hair, travel size.</p>
+        <p class="price">Price on request</p>
+        <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Stripes%20Mini%20Polish%20Brush%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
+      </div>
+
+      <div class="card product">
+        <img class="product-photo-img" src="img/product-oribe-signature-shampoo.jpg" alt="Oribe Signature Shampoo">
+        <h4>Oribe Signature Shampoo</h4>
+        <p class="product-desc">Daily shampoo for all hair types — shine, softness and strength.</p>
+        <p class="price">Price on request · 250 ml</p>
+        <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Oribe%20Signature%20Shampoo%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
+      </div>
+
+      <div class="card product">
+        <img class="product-photo-img" src="img/product-oribe-fragrance-experience.jpg" alt="Oribe Fragrance Experience">
+        <h4>Oribe Fragrance Experience</h4>
+        <p class="product-desc">Discovery set of three mini eau de parfum.</p>
+        <p class="price">Price on request · 3 × 10 ml</p>
+        <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Oribe%20Fragrance%20Experience%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
+      </div>
+
+      <div class="card product">
+        <img class="product-photo-img" src="img/product-oribe-gold-lust-dry.jpg" alt="Oribe Gold Lust Dry Shampoo">
+        <h4>Oribe Gold Lust Dry Shampoo</h4>
+        <p class="product-desc">Dry shampoo that instantly refreshes hair and adds volume between washes.</p>
+        <p class="price">Price on request · 75 ml</p>
+        <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Oribe%20Gold%20Lust%20Dry%20Shampoo%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
+      </div>
+
+      <div class="card product">
+        <img class="product-photo-img" src="img/product-oribe-alchemy-serum.jpg" alt="Oribe Hair Alchemy Fortifying Treatment Serum">
+        <h4>Oribe Hair Alchemy Fortifying Treatment Serum</h4>
+        <p class="product-desc">Fortifying serum for fragile, breakage-prone hair.</p>
+        <p class="price">Price on request · 175 ml</p>
+        <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20Oribe%20Hair%20Alchemy%20Fortifying%20Treatment%20Serum%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
+      </div>
+
+      <div class="card product">
+        <img class="product-photo-img" src="img/product-rco-dallas.jpg" alt="R+Co Dallas Thickening Spray">
+        <h4>R+Co Dallas Thickening Spray</h4>
+        <p class="product-desc">Thickening spray for body and fullness.</p>
+        <p class="price">Price on request · 250 ml</p>
+        <a class="btn-order" href="https://wa.me/18252882319?text=Hi%20Ilona%21%20I%27d%20like%20to%20order%3A%20R%2BCo%20Dallas%20Thickening%20Spray%20-%20price%20on%20request.%20Is%20it%20available%20for%20pickup%3F" target="_blank" rel="noopener">Order on WhatsApp →</a>
+      </div>
+
+    </div>
+    <p class="shop-note">Pickup in studio: 2031 33 Ave SW, Calgary · Pay in studio</p>
+  </div>
+</section>
+<!-- КОНТАКТЫ -->
   <section id="contacts" class="section">
     <div class="container">
       <h2>Visit us</h2>
-      <p><a class="address-link" href="https://maps.app.goo.gl/cUGfnJWzYhUoTj6k9" target="_blank" rel="noopener">2031 33 Ave SW, Calgary, AB</a></p>
-
+      <p><a class="address-link" href="https://www.google.com/maps/search/?api=1&query=2031+33+Ave+SW%2C+Calgary%2C+AB" target="_blank" rel="noopener">2031 33 Ave SW, Calgary, AB</a></p>
+      <p class="contact-note">Pickup in studio - Pay in studio</p>
       <!-- ИНСТАГРАМ: профиль подтвержден по посту — @ilonakostyrenko -->
       <p>
-      <p class="shop-note">Pickup in studio - Pay in studio</p>
-
         <a class="insta-link" href="https://www.instagram.com/ilonakostyrenko/" target="_blank" rel="noopener" aria-label="Ilona Hair Studio on Instagram">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
           <span>@ilonakostyrenko</span>
         </a>
       </p>
-
-      <!-- Часы работы — впишешь сюда, когда Илона пришлет -->
+      <!-- СПРОСИ У ИЛОНЫ: телефон и часы работы — впишешь сюда -->
       <a class="btn btn-big" href="https://book.squareup.com/appointments/buke603djnq2th/location/LHS0RMQ2BGRQQ/services" target="_blank" rel="noopener">Book online via Square</a>
     </div>
   </section>
