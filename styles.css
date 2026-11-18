@@ -23,14 +23,39 @@ body {
   position: sticky; top: 0;
   background: #fff;
   border-bottom: 1px solid #eee;
+  z-index: 50;
 }
 .header-inner {
   display: flex; align-items: center; justify-content: space-between;
   padding: 14px 20px;
 }
 .logo { font-size: 1.25rem; font-weight: 700; color: var(--text); text-decoration: none; }
+/* НАВИГАЦИЯ: на компьютере ссылки в строку, на телефоне — гамбургер */
+.nav { display: flex; align-items: center; margin-left: auto; }
 .nav a { margin: 0 12px; color: var(--muted); text-decoration: none; }
 .nav a:hover { color: var(--text); }
+.nav-book { display: none; }
+
+/* Кнопка-гамбургер: скрыта, показывается только на телефоне */
+.nav-toggle {
+  display: none;
+  flex-direction: column; justify-content: center; align-items: center; gap: 5px;
+  width: 44px; height: 44px; flex-shrink: 0;
+  margin-left: 12px;
+  background: none; border: 1px solid #ddd; border-radius: var(--radius);
+  cursor: pointer;
+}
+.nav-toggle span {
+  display: block; width: 20px; height: 2px;
+  background: var(--text);
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+.nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle.open span:nth-child(2) { opacity: 0; }
+.nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Якорные переходы не прячутся под липкой шапкой */
+section[id] { scroll-margin-top: 84px; }
 
 /* КНОПКИ */
 .btn {
@@ -82,44 +107,21 @@ body {
 
 /* КОНТАКТЫ + ПОДВАЛ */
 #contacts { text-align: center; }
+#contacts .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+#contacts h2, #contacts p { margin: 0; }
+#contacts .btn-big { margin-top: 0; }
+.contact-note { color: var(--muted); }
+.address-link { color: var(--text); text-decoration: none; font-weight: 600; }
+.address-link:hover { color: var(--accent); text-decoration: underline; }
+
 .footer { padding: 24px 0; text-align: center; color: var(--muted); border-top: 1px solid #eee; }
 
-/* МОБИЛЬНАЯ ВЕРСИЯ */
-@media (max-width: 600px) {
-  .nav { display: none; }
-  .hero h1 { font-size: 1.9rem; }
-}
-
-.section-sub { text-align: center; color: var(--muted); margin-bottom: 28px; }
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-}
-.portfolio-grid img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: var(--radius);
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-.portfolio-grid img:hover { transform: scale(1.03); }
-
-/* ЛАЙТБОКС */
-.lightbox {
-  display: none;
-  position: fixed; inset: 0;
-  background: rgba(0, 0, 0, 0.85);
-  justify-content: center; align-items: center;
-  z-index: 100;
-}
-.lightbox.open { display: flex; }
-.lightbox img { max-width: 90%; max-height: 90%; border-radius: var(--radius); }
-
-@media (max-width: 600px) {
-  .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
-}
+/* КНОПКИ ЗАПИСИ В КАРТОЧКАХ УСЛУГ */
 .book-link {
   display: inline-block;
   margin-top: 10px;
@@ -130,6 +132,16 @@ body {
 .book-link:hover { text-decoration: underline; }
 
 /* ABOUT — узкая карточка по центру */
+.about-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  display: block;
+  margin: 0 auto 20px;
+}
 .about-wrap {
   max-width: 680px;
   margin: 0 auto;
@@ -181,16 +193,7 @@ body {
   padding: 8px 18px;
   font-size: 0.95rem;
 }
-.about-photo {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid #fff;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-  display: block;
-  margin: 0 auto 20px;
-}
+
 /* ССЫЛКА НА ИНСТАГРАМ В КОНТАКТАХ */
 .insta-link {
   display: inline-flex;
@@ -202,6 +205,70 @@ body {
   text-decoration: none;
 }
 .insta-link:hover { text-decoration: underline; }
+
+/* ПОРТФОЛИО */
+.section-sub { text-align: center; color: var(--muted); margin-bottom: 28px; }
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.portfolio-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.portfolio-grid img:hover { transform: scale(1.03); }
+
+/* ЛАЙТБОКС */
+.lightbox {
+  display: none;
+  position: fixed; inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  justify-content: center; align-items: center;
+  z-index: 100;
+}
+.lightbox.open { display: flex; }
+.lightbox img { max-width: 90%; max-height: 90%; border-radius: var(--radius); }
+
+/* МОБИЛЬНАЯ ВЕРСИЯ */
+@media (max-width: 768px) {
+  .btn-header { display: none; }
+  .nav-toggle { display: flex; margin-left: auto; }
+  .nav { display: none; margin-left: 0; }
+  .nav.open {
+    display: flex; flex-direction: column;
+    position: absolute; top: 100%; left: 12px; right: 12px;
+    background: #fff;
+    border: 1px solid #eee; border-radius: var(--radius);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    padding: 8px 0;
+    z-index: 60;
+  }
+  .nav.open a {
+    display: block;
+    margin: 0;
+    padding: 12px 22px;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 1.05rem;
+  }
+  .nav.open a:hover { background: var(--bg-alt); }
+  .nav.open a.nav-book {
+    display: block;
+    background: var(--accent); color: #fff;
+    font-weight: 600; text-align: center;
+    margin: 8px 12px 4px;
+    border-radius: var(--radius);
+  }
+  .nav.open a.nav-book:hover { background: var(--accent); opacity: 0.9; }
+  .hero h1 { font-size: 1.9rem; }
+  .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
+  .about-wrap { padding: 32px 24px; }
+}
 
 /* МАГАЗИН */
 .product-photo {
@@ -227,10 +294,13 @@ body {
 /* Цена — жирная, прямо над кнопкой, не скачет от длины описания */
 .product .price {
   margin-top: auto;
-  margin-bottom: 14px;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 1.1rem;
 }
+/* Остаток на складе — сразу под ценой, перед кнопкой */
+.stock { font-size: 0.85rem; color: #2d6a4f; margin: 0 0 14px; }
+.stock.out { color: #b3261e; }
 .product-desc { color: var(--muted); font-size: 0.95rem; margin: 6px 0 10px; }
 .btn-order {
   display: block;
@@ -247,3 +317,4 @@ body {
 }
 .btn-order:hover { opacity: 0.9; }
 .shop-note { text-align: center; color: var(--muted); margin-top: 24px; }
+
